@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    >
+  <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       >
+       <ImageView 
+           android:id="@+id/ic_back"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:scaleType="fitXY"
+           android:paddingTop="5dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+           android:src="@drawable/ic_back"
+	       />
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="消息详情页"
+           android:textColor="#dc020b"
+           android:textSize="20sp"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/account_bg"
+      android:layout_marginTop="50dp"
+      >
+      
+	    <RelativeLayout 
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_marginTop="10dp"
+	      >   
+		   <TextView
+		        android:id="@+id/title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="您的订单已被抢"
+		        android:textColor="#313131"
+		        android:layout_marginLeft="15dp"
+		        android:layout_centerVertical="true"
+		        android:textSize="16sp" />
+		    <TextView
+		        android:id="@+id/createtime"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="2015/9/22 15:30"
+		        android:layout_alignParentRight="true"
+		        android:textColor="#535353"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="30dp"
+		        android:textSize="15sp" />
+	     </RelativeLayout>
+		
+		 <RelativeLayout 
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_marginTop="50dp"
+		     >   
+			   <TextView
+			       android:id="@+id/content"
+			       android:layout_width="match_parent"
+			       android:layout_height="wrap_content"
+			       android:text="待付款"
+			       android:layout_centerVertical="true"
+			       android:textColor="#535353"
+			       android:layout_marginRight="30dp"
+			       android:layout_marginLeft="15dp"
+			       android:textSize="15sp" />
+			 </RelativeLayout>
+			 
+   </RelativeLayout>
+    
+         <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:paddingBottom="20dp"
+           android:src="@drawable/ic_logo2" />
+         
+</RelativeLayout>

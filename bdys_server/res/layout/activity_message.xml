@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f3f3f3"
+    >
+    <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       >
+       <ImageView 
+           android:id="@+id/ic_back"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:scaleType="fitXY"
+           android:paddingTop="5dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+           android:src="@drawable/ic_back"
+	       />
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="消息"
+           android:textColor="#dc020b"
+           android:textSize="20sp"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        >
+  <com.fding.activity.widget.RefreshLayout
+        android:id="@+id/id_swipe_health"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" > 
+      <com.fding.activity.widget.SwipeMenuListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:listSelector="#00000000"  
+        android:divider="#00000000"
+        android:scrollbars="none"
+        android:dividerHeight="8dp"
+       />
+      </com.fding.activity.widget.RefreshLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
