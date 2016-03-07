@@ -1,0 +1,150 @@
+<com.fding.activity.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.wind4app.wind4app2"
+    android:id="@+id/id_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    app:rightPadding="220dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/layout_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <include layout="@layout/activity_title" />
+
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </FrameLayout>
+
+            <!--
+                <View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:background="#000000" />
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/going_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/going_image"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/going" />
+
+                        <TextView
+                            android:id="@+id/going_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="进行中订单"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!--
+                <View
+				android:layout_width="0.5dp"
+				android:layout_height="match_parent"
+				android:background="#000000" />
+                -->
+
+                <RelativeLayout
+                    android:id="@+id/avai_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/avai_image"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/available" />
+
+                        <TextView
+                            android:id="@+id/avai_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="可接订单"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!--
+                <View
+				android:layout_width="0.5dp"
+				android:layout_height="match_parent"
+				android:background="#000000" />
+                -->
+
+                <RelativeLayout
+                    android:id="@+id/history_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/history_image"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/history" />
+
+                        <TextView
+                            android:id="@+id/history_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="历史订单"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.fding.activity.SlidingMenu>
