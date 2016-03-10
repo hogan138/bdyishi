@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="tab_selected_bg">#ffffff</color>
-     <color name="gray">#f3f3f3</color>
-     <color name="none_color">#00000000</color>
-    <color name="bule_overlay">#660D92DD</color>
-</resources>
